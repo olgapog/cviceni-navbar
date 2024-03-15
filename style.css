@@ -1,26 +1,61 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-*, :after, :before { box-sizing: border-box; }
+*,
+:after,
+:before {
+	box-sizing: border-box;
+}
 
 body {
 	font-family: sans-serif;
+	/*display: flex;*/
 }
 
 
 .hlavicka {
 	background-color: #3498db;
 	color: white;
+	display: flex;
+	justify-content: space-between;
 }
 
 a {
-	display: block;
+	display: flex;
+	align-items: center;
 	padding: 5px 15px;
 	color: white;
 	text-decoration: none;
+	
 }
 
 a:hover {
 	background-color: white;
 	color: #3498db;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	display: flex;
+	list-style-type: none;
+	margin: 1px;
+	padding: 0;
+}
+
+.navbar {
+	display: flex;
+
+
+}
+
+.logo {
+	align-self: center;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 10px 20px;
 }
 
 /* ---------------------------------------------------- */
